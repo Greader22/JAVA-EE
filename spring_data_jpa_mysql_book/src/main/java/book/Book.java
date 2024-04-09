@@ -9,11 +9,13 @@ import lombok.Data;
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Integer id;
+    public Long id;
     @Column
     public String title;
     @Column
     public String author;
+    @Column
+    private int pages;
 
 
 
